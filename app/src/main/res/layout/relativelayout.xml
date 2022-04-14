@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="422dp"
+        android:layout_height="651dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="136dp"
+        android:layout_weight="90"
+        app:layout_constraintBottom_toTopOf="@+id/playRecord2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+    </androidx.camera.view.PreviewView>
+
+    <Button
+        android:id="@+id/playRecord2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/find_text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bCapture2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/take_picture"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/applogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/logosightfull_foreground"
+        tools:ignore="ImageContrastCheck" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_gif"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/loading_gif_copia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

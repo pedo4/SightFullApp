@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sightfull</string>
+    <string name="take_picture">take picture</string>
+    <string name="play">play</string>
+    <string name="find_text">play text</string>
+    <string name="applogo">AppLogo</string>
+</resources>
